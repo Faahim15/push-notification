@@ -1,5 +1,16 @@
 {
   "expo": {
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff",
+          "defaultChannel": "default",
+          "enableBackgroundRemoteNotifications": false
+        }
+      ]
+    ],
     "name": "push-notification",
     "slug": "push-notification",
     "version": "1.0.0",
@@ -20,10 +31,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.fahim15.pushnotification"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "30964821-377d-49d3-ac21-5997a6933bff"
+      }
     }
   }
 }
